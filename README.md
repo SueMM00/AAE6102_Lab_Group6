@@ -19,7 +19,7 @@ This repository contains the lab report and findings from an experiment on GNSS 
 
 ### **Parameters Tuned**
 The following parameters were tuned during the experiment:
-1. **Satellite System**: GPS-only, GPS + GLONASS, GPS + GLONASS + Galileo.
+1. **Satellite System**: GPS-only, GPS + GLONASS + Galileo + Beidou.
 2. **Positioning Method**: Static Positioning, DGPS (Differential GPS).
 3. **Filter Combination**: Forward Filter only, Forward + Backward Filter.
 
@@ -29,25 +29,24 @@ The following parameters were tuned during the experiment:
 
 ### **1. Satellite System Comparison**
 
-| **Satellite System**       | **Accuracy (95th percentile)** | **Processing Speed (s)** | **Robustness**       |
-|----------------------------|--------------------------------|--------------------------|----------------------|
-| GPS-only                   | 2.5 meters                    | 10.2                     | Low                  |
-| GPS + GLONASS              | 1.8 meters                    | 14.5                     | Moderate             |
-| GPS + GLONASS + Galileo    | 1.2 meters                    | 18.7                     | High                 |
+| **Satellite System**       | **Accuracy** | **Processing Speed** | **Robustness**       |
+|----------------------------|--------------|----------------------|----------------------|
+| GPS-only                            | Low          | Fast                 | Low                  |
+| GPS + GLONASS + Galileo + Beidou    | High         | Slow                 | High                 |
 
 ### **2. Positioning Method Comparison**
 
-| **Positioning Method**     | **Accuracy (95th percentile)** | **Processing Speed (s)** | **Robustness**       |
-|----------------------------|--------------------------------|--------------------------|----------------------|
-| Static Positioning         | 1.5 meters                    | 12.3                     | Moderate (stationary only) |
-| DGPS                       | 0.8 meters                    | 15.6                     | High                 |
+| **Positioning Method**     | **Accuracy** | **Processing Speed** | **Robustness**       |
+|----------------------------|--------------|----------------------|----------------------|
+| Static Positioning         | Medium       | Moderate             | Moderate (stationary only) |
+| DGPS                       | High         | Slow                 | High                 |
 
 ### **3. Filter Combination Comparison**
 
-| **Filter Combination**      | **Accuracy (95th percentile)** | **Processing Speed (s)** | **Robustness**       |
-|-----------------------------|--------------------------------|--------------------------|----------------------|
-| Forward Filter only         | 1.5 meters                    | 10.8                     | Moderate             |
-| Forward + Backward Filter   | 0.9 meters                    | 22.4                     | High                 |
+| **Filter Combination**      | **Accuracy** | **Processing Speed** | **Robustness**       |
+|-----------------------------|--------------|----------------------|----------------------|
+| Forward Filter only         | Medium       | Fast                 | Moderate             |
+| Forward + Backward Filter   | High         | Slow                 | High                 |
 
 ---
 
@@ -55,13 +54,13 @@ The following parameters were tuned during the experiment:
 
 ### **Optimal Parameter Settings**
 The best positioning results were achieved using:
-- **Satellite System**: GPS + GLONASS + Galileo
+- **Satellite System**: GPS + GLONASS + Galileo + Beidou
 - **Positioning Method**: DGPS
 - **Filter Combination**: Forward + Backward Filter
 
 ### **Performance Metrics for Optimal Settings**
-- **Accuracy**: 0.8 meters (95th percentile)
-- **Processing Speed**: 22.4 seconds
+- **Accuracy**: High
+- **Processing Speed**: Slow
 - **Robustness**: High
 
 ---
