@@ -32,8 +32,8 @@ The following parameters were tuned during the experiment:
 | **Satellite System**       | **Accuracy** | **Processing Speed** | **Robustness**       |
 |----------------------------|--------------|----------------------|----------------------|
 | GPS-only                            | Low          | Fast                 | Low                  |
-| GPS + GLONASS + Galileo + Beidou    | High         | Slow                 | High                 |
 ![ONLY GPS](https://github.com/user-attachments/assets/88c632b4-5300-453b-816e-74b28dcac440)
+| GPS + GLONASS + Galileo + Beidou    | High         | Slow                 | High                 |
 ![full constellation](https://github.com/user-attachments/assets/3467e209-48da-4986-9db2-4e096d5cf72e)
 
 ### **2. Positioning Method Comparison**
@@ -41,8 +41,8 @@ The following parameters were tuned during the experiment:
 | **Positioning Method**     | **Accuracy** | **Processing Speed** | **Robustness**       |
 |----------------------------|--------------|----------------------|----------------------|
 | Static Positioning         | Medium       | Moderate             | Moderate (stationary only) |
-| DGPS                       | High         | Slow                 | High                 |
 ![STATIC](https://github.com/user-attachments/assets/0c6257ff-0128-4468-bc5a-2002c791bb14)
+| DGPS                       | High         | Slow                 | High                 |
 ![DGPS](https://github.com/user-attachments/assets/15f9b33b-bd6a-4188-8865-59c9baab3741)
 
 ### **3. Filter Combination Comparison**
@@ -50,8 +50,8 @@ The following parameters were tuned during the experiment:
 | **Filter Combination**      | **Accuracy** | **Processing Speed** | **Robustness**       |
 |-----------------------------|--------------|----------------------|----------------------|
 | Forward Filter only         | Medium       | Fast                 | Moderate             |
-| Forward + Backward Filter   | High         | Slow                 | High                 |
 ![full constellation](https://github.com/user-attachments/assets/a9edf31a-f8a5-4f37-8067-cee4a918705b)
+| Forward + Backward Filter   | High         | Slow                 | High                 |
 ![COMBINEDFILTER](https://github.com/user-attachments/assets/1fc71598-20f0-4e7c-9dfa-76601955bb99)
 
 The result of more iterations of filter, much more processing time, little gains:
