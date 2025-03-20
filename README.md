@@ -1,4 +1,6 @@
-# AAE6102_Lab_Group7
+# AAE6102_Lab_Group6
+# Group Member: SU Meiling, Hai Di, Yao Senna, Ye Mingda, Song Baoshan, Tan Zheng
+
 # GNSS Positioning and Parameter Tuning Lab Report
 
 This repository contains the lab report and findings from an experiment on GNSS (Global Navigation Satellite System) positioning and parameter tuning. The report evaluates the impact of different parameter settings on positioning accuracy, processing speed, and robustness. The results are summarized, and suggestions for improvement are provided.
